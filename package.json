@@ -3,6 +3,10 @@
   "version": "0.0.5",
   "description": "Minimal Lodash like utilities",
   "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jmaguirrei/belt.git"
+  },
   "scripts": {
     "build": "parcel build ./src/index.js",
     "deliver": "npm version patch && npm run build && npm publish",
