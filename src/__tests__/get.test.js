@@ -47,5 +47,16 @@ export default {
     );
   },
 
+  ['Works with numeric keys']() {
+    assert.equal(
+      get({
+        0: 'false-0',
+        1: 'true-1',
+        2: 'false-2',
+      }, 1),
+      'true-1',
+    );
+  },
+
 };
 

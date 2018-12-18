@@ -7,7 +7,9 @@ export function uid(strLength = 8) {
   // Start the final string
   let str = '';
   for (let i = 1; i <= strLength; i++) {
-    const randChar = availableChars.charAt(Math.floor(Math.random() * availableCharsLength));
+    const randChar = availableChars.charAt(
+      Math.floor(Math.random() * availableCharsLength)
+    );
     // Append this character to the string
     str += randChar;
   }

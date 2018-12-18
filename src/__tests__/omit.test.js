@@ -1,11 +1,15 @@
 
 import assert from 'assert';
-import { uid } from '../uid';
+import { omit } from '../omit';
 
 export default {
 
-  ['Test is pending']() {
-    assert.equal(1,2);
+  ['Returns new object like the original except excluded (existent) keys']() {
+    assert.deepEqual(
+      omit({ a: 1, b: 2, c: 3 }, [ 'c', 'd' ]),
+      //
+      { a: 1, b: 2 }
+    );
   },
 
 

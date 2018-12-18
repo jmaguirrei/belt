@@ -9,9 +9,17 @@
   },
   "scripts": {
     "build": "parcel build ./src/index.js",
-    "package": "npm version patch && npm run build && npm publish --access public",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "git_": "git add . && git commit -m 'Initial commit' && git push",
+    "pack_": "npm version patch && npm run build && npm publish --access public",
+    "git-pack": "npm run git_ && npm run pack_",
+    "test": "nodemon tests.js"
   },
   "author": "José Manuel Aguirre",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@jmaguirrei/tester": "0.0.8",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0"
+  }
 }

@@ -1,6 +1,10 @@
 
 export function get(obj, key, defaultValue) {
 
+  // Key is number
+  if (typeof key === 'number') return obj[key] || defaultValue;
+
+  // Key is string
   const splittedKeys = key.split('.');
   let exit = false;
   return splittedKeys.reduce((acum, value) => {
@@ -11,5 +15,6 @@ export function get(obj, key, defaultValue) {
     }
     return acum[value];
   }, obj);
+
 
 }
