@@ -1,5 +1,8 @@
 
-export function uid(strLength = 8) {
+export function uid(strLength = 6) {
+
+  const now = String(Date.now());
+  const middlePos = Math.ceil(now.length / 2);
 
   const availableChars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
   const availableCharsLength = availableChars.length;
@@ -14,7 +17,7 @@ export function uid(strLength = 8) {
     str += randChar;
   }
 
-  return `${Date.now()}-${str}`;
+  return `${now.substr(0, middlePos)}-${str}-${now.substr(middlePos)}`;
 
 }
 
