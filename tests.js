@@ -9,4 +9,6 @@ require('babel-register')({
 
 const path = require('path');
 
-require('@jmaguirrei/tester').init(path.join(__dirname, './src/'));
+require('../tester/src/index.js').init({
+  belt: path.join(__dirname, './src/'),
+});

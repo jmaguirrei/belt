@@ -1,28 +1,30 @@
 
-import { get } from './get';
-import { last } from './last';
-import { random } from './random';
 import { compact } from './compact';
+import { get } from './get';
+import { has } from './has';
+import { last } from './last';
+import { omit } from './omit';
+import { parseEnv } from './parseEnv';
+import { pick } from './pick';
+import { random } from './random';
 import { range } from './range';
 import { sample } from './sample';
-import { pick } from './pick';
-import { omit } from './omit';
-import { has } from './has';
-import { uniq } from './uniq';
 import { uid } from './uid';
+import { uniq } from './uniq';
 
 export default {
 
+  compact,
   get,
+  has,
   last,
+  omit,
+  parseEnv,
+  pick,
   random,
   range,
   sample,
-  has,
-  pick,
-  omit,
-  compact,
-  uniq,
   uid,
+  uniq,
 
 };

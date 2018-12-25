@@ -12,12 +12,12 @@
     "git_": "git add . && git commit -m 'Initial commit' && git push",
     "pack_": "npm version patch && npm run build && npm publish --access public",
     "git-pack": "npm run git_ && npm run pack_",
+    "update-jmaguirrei": "ncu -u '/^@jmaguirrei.*$/' && npm install",
     "test": "nodemon tests.js"
   },
   "author": "José Manuel Aguirre",
   "license": "MIT",
   "devDependencies": {
-    "@jmaguirrei/tester": "0.0.8",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-2": "^6.24.1",
