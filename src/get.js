@@ -1,6 +1,10 @@
 
 export function get(obj, key, defaultValue) {
 
+  // Undefined object
+  if (!obj) return defaultValue;
+  if (typeof obj === 'object' && Object.keys(obj).length === 0) return defaultValue;
+
   // Key is number
   if (typeof key === 'number') {
     if (obj[key] === undefined) return defaultValue;

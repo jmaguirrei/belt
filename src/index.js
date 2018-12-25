@@ -1,5 +1,4 @@
 
-import { flatMap } from './flatMap';
 import { get } from './get';
 import { last } from './last';
 import { random } from './random';
@@ -14,7 +13,6 @@ import { uid } from './uid';
 
 export default {
 
-  flatMap,
   get,
   last,
   random,

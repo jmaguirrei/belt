@@ -58,5 +58,20 @@ export default {
     );
   },
 
+  ['Works with undefined object']() {
+    assert.equal(
+      get(undefined, 1, 'defaulty'),
+      'defaulty',
+    );
+  },
+
+
+  ['Works with empty object']() {
+    assert.equal(
+      get({}, 1, 'defaulty'),
+      'defaulty',
+    );
+  },
+
 };
 

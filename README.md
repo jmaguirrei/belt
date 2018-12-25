@@ -6,7 +6,6 @@ Purpose: To avoid installing Lodash in favor of "babel" ESNext features (like `m
 
 ### List of methods:
 - compact (`array`) => (`array`)
-- flatMap (`array`, `fn`) => (`array`)
 - get (`obj`, `key`, `defaultValue`) => (`any`)
 - has (`obj`, `key`) => (`boolean`)
 - last (`array`) => (`any`)
