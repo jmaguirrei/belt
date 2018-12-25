@@ -1,6 +1,6 @@
 {
   "name": "@jmaguirrei/belt",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Minimal Lodash like utilities",
   "main": "dist/index.js",
   "repository": {
