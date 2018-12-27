@@ -3,20 +3,16 @@
   "version": "0.0.12",
   "description": "Minimal Lodash like utilities",
   "main": "dist/index.js",
+  "author": "José Manuel Aguirre",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/jmaguirrei/belt.git"
   },
   "scripts": {
-    "build": "parcel build ./src/index.js",
-    "git_": "git add . && git commit -m 'Initial commit' && git push",
-    "pack_": "npm version patch && npm run build && npm publish --access public",
-    "git-pack": "npm run git_ && npm run pack_",
-    "update-jmaguirrei": "ncu -u '/^@jmaguirrei.*$/' && npm install",
-    "test": "nodemon tests.js"
+    "git-pack": "git add . && git commit -m 'Initial commit' && git push && npm version patch && parcel build ./src/index.js && npm publish --access public",
+    "update-jmaguirrei": "ncu -u '/^@jmaguirrei.*$/' && npm install"
   },
-  "author": "José Manuel Aguirre",
-  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
