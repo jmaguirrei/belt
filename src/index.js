@@ -4,7 +4,6 @@ import { get } from './get';
 import { has } from './has';
 import { last } from './last';
 import { omit } from './omit';
-import { parseEnv } from './parseEnv';
 import { pick } from './pick';
 import { random } from './random';
 import { range } from './range';
@@ -19,7 +18,6 @@ export default {
   has,
   last,
   omit,
-  parseEnv,
   pick,
   random,
   range,
