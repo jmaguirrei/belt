@@ -1,3 +1,7 @@
 
 .cache/*
 node_modules/*
+.eslintignore
+.eslintrc
+.package-lock.json
+.DS_Store
