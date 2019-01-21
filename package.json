@@ -10,8 +10,16 @@
     "url": "https://github.com/jmaguirrei/belt.git"
   },
   "scripts": {
-    "git-pack": "git add . && git commit -m 'Initial commit' && git push && npm version patch && parcel build ./src/index.js && npm publish --access public",
-    "update-jmaguirrei": "ncu -u '/^@jmaguirrei.*$/' && npm install"
+    "build": "npm version patch && parcel build ./src/index.js",
+
+    "git-i1": "git add .",
+    "git-i2": "git diff-index --quiet HEAD || git commit -m 'Initial commit'",
+    "git-i3": "git push",
+    "git-initial": "npm run git-i1 && npm run git-i2 && npm run git-i3",
+
+    "pack": "npm publish --access public",
+
+    "deploy": "npm run git-initial && npm run build && npm run pack"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
