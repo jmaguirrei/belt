@@ -1,6 +1,6 @@
 {
   "name": "@jmaguirrei/belt",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "Minimal Lodash like utilities",
   "main": "dist/index.js",
   "author": "José Manuel Aguirre",
