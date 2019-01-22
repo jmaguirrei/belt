@@ -1,7 +1,8 @@
 
 .cache/*
 node_modules/*
+package-lock.json
 .eslintignore
 .eslintrc
-.package-lock.json
 .DS_Store
+update.sh
